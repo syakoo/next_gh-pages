@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "env NODE_ENV='production' next build"
+    "build": "env NODE_ENV='production' next build",
+    "export": "next export"
   },
   "dependencies": {
     "next": "^9.4.4",
