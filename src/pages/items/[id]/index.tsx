@@ -10,7 +10,7 @@ const ItemPage: NextPage<{ data: string }> = ({ data }) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = ['/items/a', '/items/b', '/items/c']
+  const paths = ['/items/a', '/items/b']
   return {
     paths,
     fallback: false,
