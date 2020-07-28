@@ -15,10 +15,16 @@ export const Header: React.FC = () => {
           <Link href="/items" as={withRootPath('/items')}>
             <a>Items</a>
           </Link>
-          <Link href="/items/[id]" as={withRootPath('/items/a')}>
+          <Link
+            href={withRootPath('/items/[id]')}
+            as={withRootPath('/items/a')}
+          >
             <a>A</a>
           </Link>
-          <Link href="/items/[id]" as={withRootPath('/items/b')}>
+          <Link
+            href={withRootPath('/items/[id]')}
+            as={withRootPath('/items/b')}
+          >
             <a>B</a>
           </Link>
         </div>
