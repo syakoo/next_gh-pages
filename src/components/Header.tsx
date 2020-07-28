@@ -1,30 +1,21 @@
 import React from 'react'
 import Link from 'next/link'
 
-const withRootPath = (path: string) =>
-  process.env.NODE_ENV === 'production' ? '/next_gh-pages' + path : path
-
 export const Header: React.FC = () => {
   return (
     <>
       <header>
         <div>
-          <Link href="/" as={withRootPath('/')}>
+          <Link href="/" as={'/'}>
             <a>Home</a>
           </Link>
-          <Link href="/items" as={withRootPath('/items')}>
+          <Link href="/items" as={'/items'}>
             <a>Items</a>
           </Link>
-          <Link
-            href={withRootPath('/items/[id]')}
-            as={withRootPath('/items/a')}
-          >
+          <Link href={'/items/[id]'} as={'/items/a'}>
             <a>A</a>
           </Link>
-          <Link
-            href={withRootPath('/items/[id]')}
-            as={withRootPath('/items/b')}
-          >
+          <Link href={'/items/[id]'} as={'/items/b'}>
             <a>B</a>
           </Link>
         </div>
